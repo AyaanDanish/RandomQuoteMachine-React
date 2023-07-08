@@ -1,0 +1,45 @@
+:root {
+  --color-theme: #000000; /* arbitrary initializer*/
+  --prev-color-theme: #000000;
+}
+
+#text {
+  animation: fade-in 1.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.my-button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid var(--color-theme);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: var(--color-theme);
+  background-color: white;
+  transition: color 0.15s ease-in-out, border-color 1.5s ease-in-out;
+}
+
+.my-button:hover {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: var(--color-theme);
+  color: white;
+}
+
+.my-icon {
+  color: var(--color-theme);
+}
