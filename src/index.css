@@ -43,3 +43,7 @@
 .my-icon {
   color: var(--color-theme);
 }
+
+#quote-box {
+  transition: width 1s, height 1s;
+}
